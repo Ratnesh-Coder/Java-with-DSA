@@ -1,5 +1,5 @@
 import java.util.*;
-public class Kandanes {
+public class Kadanes {
     public static int maxSum(int[] arr) {
         int currentSum = 0;
         int maxSum = Integer.MIN_VALUE;
@@ -20,7 +20,7 @@ public class Kandanes {
             for (int i=0; i<arr.length; i++) {
                 arr[i] = sc.nextInt();
             }
-            System.out.println("Max sum is: " + Kadanes);
+            System.out.println("Max sum is: " + maxSum(arr));
         }
         finally {
             sc.close();
