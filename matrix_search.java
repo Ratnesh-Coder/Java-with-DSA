@@ -1,6 +1,7 @@
 import java.util.*;
 public class matrix_search {
     public static boolean search (int[][]matrix, int target) {
+
         // Brute Force. Time complexity O(n^2)
         // for (int i=0; i<matrix.length; i++) {
         //     for (int j=0; j<matrix[0].length; j++) {
@@ -10,10 +11,11 @@ public class matrix_search {
         //     }
         // }
         // return -1;
+
         // Optimized. Time complexity O(n+m)
         int row = 0;
         int col = matrix[0].length-1;
-        while (row < matrix[0].length-1 && col >= 0) {
+        while (row < matrix.length && col >= 0) {
             if (matrix[row][col] == target) {
                 System.out.print("Target is at: " + "(" + row + ", " + col + ")");
                 return true;
