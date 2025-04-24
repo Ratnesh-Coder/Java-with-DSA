@@ -1,4 +1,4 @@
-public class counter {
+public class gallons_to_liters {
     public static void main (String args[]) {
         double gallons, liters;
         int counter = 0; 
