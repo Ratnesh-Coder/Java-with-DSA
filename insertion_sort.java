@@ -1,8 +1,7 @@
 import java.util.*;
 public class insertion_sort {
     public static void insertion (int[] arr) {
-        int n = arr.length;
-        for (int i=1; i<n; i++) {
+        for (int i=1; i<arr.length; i++) {
             int curr = arr[i];
             int prev = i-1;
             while (prev>=0 && curr < arr[prev]) {
