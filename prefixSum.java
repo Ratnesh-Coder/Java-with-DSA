@@ -1,16 +1,20 @@
 import java.util.*;
-public class array_maxsum_subarray_prefixSum {
-    public static int prefixSum(int[] arr) {
-        int[] prefixArr = new int[arr.length];
-        prefixArr[0] = arr[0];
+public class prefixSum {
+    public static int sum (int[] arr) {
+        int[] prefix = new int[arr.length];
+        prefix[0] = arr[0];
         for (int i=1; i<arr.length; i++) {
-            prefixArr[i] = prefixArr[i-1] + arr[i];
+            prefix[i] = prefix[i-1] + arr[i];
+        }
+        System.out.print("Prefix Sum Array: ");
+        for (int num:prefix) {
+            System.out.print(num + " ");
         }
         int sum = 0;
         int max = Integer.MIN_VALUE;
         for (int i=0; i<arr.length; i++) {
             for (int j=i; j<arr.length; j++) {
-                sum = i == 0 ? prefixArr[j] : prefixArr[j] - prefixArr[i-1];
+                sum = i == 0 ? prefix[j] : prefix[j] - prefix[i-1];
                 if (max < sum) {
                     max = sum;
                 }
@@ -26,7 +30,7 @@ public class array_maxsum_subarray_prefixSum {
             for (int i=0; i<arr.length; i++) {
                 arr[i] = sc.nextInt();
             }
-            System.out.println(prefixSum(arr));
+            System.out.println("Sum: " + sum(arr));
         }
         finally {
             sc.close();
