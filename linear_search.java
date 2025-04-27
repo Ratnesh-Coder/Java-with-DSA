@@ -1,5 +1,5 @@
 import java.util.*;
-public class array_linear_search {
+public class linear_search {
     public static int LinearSearch (int arr[], int key) {
         for (int i=0; i<arr.length; i++) {
             if (arr[i] == key) {
@@ -16,7 +16,7 @@ public class array_linear_search {
             for (int i=0; i<arr.length; i++) {
                 arr [i] = sc.nextInt();
             }
-            // Print's teh Array
+            // Print's the Array
             // System.out.print("Array: ");
             // for (int i=0; i<arr.length; i++) {
             //     System.out.print(arr[i] + " ");

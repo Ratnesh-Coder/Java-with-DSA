@@ -1,5 +1,5 @@
 import java.util.*;
-public class array_binary_search {
+public class binary_search {
     public static int search(int arr[], int target) {
         if (arr == null || arr.length == 0) {
             return -1;
