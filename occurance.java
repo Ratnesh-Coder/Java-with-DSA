@@ -1,5 +1,5 @@
 import java.util.*;
-public class worst_counting {
+public class occurance {
     public static int count (int[] arr, int size) {
         for (int i=0; i<size; i++) {
             int count = 0;

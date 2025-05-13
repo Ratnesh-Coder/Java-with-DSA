@@ -1,5 +1,5 @@
 import java.util.*;
-public class matrix_search {
+public class staircase_search {
     public static boolean search (int[][]matrix, int target) {
 
         // Brute Force. Time complexity O(n^2)
