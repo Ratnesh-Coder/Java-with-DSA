@@ -1,6 +1,6 @@
 import java.util.*;
 public class string_palindrome {
-    public static boolean palindrome (String word) {
+    public static boolean isPalindrome (String word) {
         for (int i=0; i<word.length()/2; i++) {
             if (word.charAt(i) != word.charAt(word.length()-1-i)) {
                 return false;
@@ -8,11 +8,12 @@ public class string_palindrome {
         }
         return true;
     }
-    public static void main (String arg[]) {
+    public static void main (String args[]) {
         Scanner sc = new Scanner (System.in);
         try {
-            String word = "Monkey";
-            System.out.print(palindrome(word));
+            System.out.print("Enter a word: ");
+            String word = sc.next();
+            System.out.print(isPalindrome(word));
         }
         finally {
             sc.close();
