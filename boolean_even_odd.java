@@ -1,5 +1,5 @@
 import java.util.*;
-public class function_even_odd {
+public class boolean_even_odd {
     public static boolean isEven (int num) {
         return num%2==0;
     }

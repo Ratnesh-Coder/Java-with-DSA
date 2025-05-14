@@ -1,5 +1,5 @@
 import java.util.*;
-public class Kadanes {
+public class kadanes {
     public static int maxSum(int[] arr) {
         int currentSum = 0;
         int maxSum = Integer.MIN_VALUE;

@@ -1,5 +1,5 @@
 import java.util.*;
-public class ZeroOnePyramid {
+public class zero_one_pyramid {
     public static void main (String args []) {
         Scanner sc = new Scanner (System.in);
         try {

@@ -1,5 +1,5 @@
 import java.util.*;
-public class Boolean_prime {
+public class boolean_prime {
     public static void main (String args[]) {
         Scanner sc = new Scanner (System.in);
         System.out.print("Enter a number: ");
