@@ -1,5 +1,5 @@
 import java.util.*;
-public class largest_string {
+public class string_largest {
     public static String largestString (String[] fruits) {
         String largest = fruits[0];
         for (int i=0; i<fruits.length; i++) {
