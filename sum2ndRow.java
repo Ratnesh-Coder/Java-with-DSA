@@ -1,4 +1,4 @@
-public class sum2ndRow {
+public class Sum2ndRow {
     public static int sum (int[][] matrix) {
         int sum = 0;
         for (int j=0; j<matrix[0].length; j++) {

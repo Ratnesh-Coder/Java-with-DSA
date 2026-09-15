@@ -1,5 +1,5 @@
 import java.util.*;
-public class prefixSum {
+public class PrefixSum {
     public static int sum (int[] arr) {
         int[] prefix = new int[arr.length];
         prefix[0] = arr[0];
@@ -10,7 +10,7 @@ public class prefixSum {
         for (int num:prefix) {
             System.out.print(num + " ");
         }
-        int sum = 0;
+        int sum;
         int max = Integer.MIN_VALUE;
         for (int i=0; i<arr.length; i++) {
             for (int j=i; j<arr.length; j++) {
@@ -24,16 +24,11 @@ public class prefixSum {
     }
     public static void main (String args[]) {
         Scanner sc = new Scanner (System.in);
-        try {
-            System.out.print("Enter elements: ");
-            int arr[] = new int [5];
-            for (int i=0; i<arr.length; i++) {
-                arr[i] = sc.nextInt();
-            }
-            System.out.println("Sum: " + sum(arr));
+        System.out.print("Enter elements: ");
+        int arr[] = new int [5];
+        for (int i=0; i<arr.length; i++) {
+            arr[i] = sc.nextInt();
         }
-        finally {
-            sc.close();
-        }
+        System.out.print("Sum: " + sum(arr));
     }
 }
