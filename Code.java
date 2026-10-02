@@ -1,10 +1,14 @@
-class Code {
+import java.util.*;
+class Code {  
     public static void main(String[] args) {
-        for (int i = 1; i <= 4; i++) {
-            for (int j = 1; j <=i; j++) {
-                System.out.print(j);
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter number of rows: ");
+        int r = sc.nextInt();
+        for (int i = 1; i <= r; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
             }
-        System.out.print("\n");
+            System.out.print("\n");
         }
     }
 }
